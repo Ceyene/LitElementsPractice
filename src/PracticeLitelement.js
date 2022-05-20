@@ -1,6 +1,7 @@
 import { LitElement, html } from "lit";
 import { practiceLitElementStyles } from "./PracticeLitelementStyles";
 import "./components/basic-properties/basic-properties";
+import "./components/change-detection/change-detection";
 
 export class PracticeLitelement extends LitElement {
   static properties = {
@@ -19,6 +20,7 @@ export class PracticeLitelement extends LitElement {
       <main>
         <h1>${this.title}</h1>
         <basic-properties name="statically created"></basic-properties>
+        <change-detection></change-detection>
       </main>
     `;
   }
