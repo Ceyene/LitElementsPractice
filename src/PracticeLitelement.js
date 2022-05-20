@@ -1,5 +1,6 @@
 import { LitElement, html } from "lit";
-import { practiceLitElementStyles } from "./components/PracticeLitelementStyles";
+import { practiceLitElementStyles } from "./PracticeLitelementStyles";
+import "./components/basic-properties/basic-properties";
 
 export class PracticeLitelement extends LitElement {
   static properties = {
@@ -14,6 +15,11 @@ export class PracticeLitelement extends LitElement {
   }
 
   render() {
-    return html` <main><h1>${this.title}</h1></main> `;
+    return html`
+      <main>
+        <h1>${this.title}</h1>
+        <basic-properties name="statically created"></basic-properties>
+      </main>
+    `;
   }
 }
