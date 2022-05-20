@@ -9,4 +9,9 @@ export const practiceLitElementStyles = css`
     margin: 0 auto;
     text-align: center;
   }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 `;
