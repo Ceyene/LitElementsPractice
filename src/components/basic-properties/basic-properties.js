@@ -10,7 +10,7 @@ export class BasicProperties extends LitElement {
 
   render() {
     return html`
-      <section id="basicProperties">
+      <section class="properties">
         <p>Hello, I'm ${this.name}</p>
       </section>
     `;
