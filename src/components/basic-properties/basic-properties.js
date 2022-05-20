@@ -9,7 +9,11 @@ export class BasicProperties extends LitElement {
   static styles = [basicPropertiesStyles];
 
   render() {
-    return html`<p>Hello, I'm ${this.name}</p>`;
+    return html`
+      <section id="basicProperties">
+        <p>Hello, I'm ${this.name}</p>
+      </section>
+    `;
   }
 }
 
